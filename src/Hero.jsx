@@ -9,17 +9,17 @@ export default function Hero() {
   return (
     <>
       <div className="mt-10 flex flex-col md:flex-row justify-evenly">
-        <div className="md:mt-28 w-full md:w-[55%] text-center md:text-left">
-          <h1 className="font-medium text-xl dark:text-white animate-typing overflow-hidden whitespace-nowrap">
+        <div className="md:mt-12 w-full md:w-[55%] text-center md:text-left">
+          <h1 className="font-medium text-4xl dark:text-white animate-typing overflow-hidden whitespace-nowrap md:text-6xl">
             Hello,
           </h1>
-          <h1 className="text-xl md:text-4xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap">
+          <h1 className="text-4xl md:text-9xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap">
             I'm{" "}
             <span className="font-bold text-blue-800 dark:text-yellow-400">
               Neil
             </span>
           </h1>
-          <h1 className="text-xl md:text-4xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap leading-relaxed">
+          <h1 className="text-xl md:text-2xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap leading-relaxed">
             Computer Science and Engineering Student.
           </h1>
           <p className="text-sm md:text-xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap">
@@ -66,11 +66,11 @@ export default function Hero() {
                   Tech Stack
                 </h2>
                 <div className="grid grid-cols-3 gap-6 justify-items-center mt-4">
-                  <i className="fab fa-html5 text-9xl hover:text-yellow-500"></i>
-                  <i className="fab fa-css3-alt text-9xl hover:text-blue-500"></i>
-                  <i className="fab fa-js text-9xl hover:text-yellow-300"></i>
-                  <i className="fab fa-laravel text-9xl hover:text-red-600"></i>
-                  <i className="fab fa-react text-9xl hover:text-cyan-400"></i>
+                  <i className="fab fa-html5 text-8xl text-yellow-500"></i>
+                  <i className="fab fa-css3-alt text-8xl text-blue-500"></i>
+                  <i className="fab fa-js text-8xl text-yellow-300"></i>
+                  <i className="fab fa-laravel text-8xl text-red-600"></i>
+                  <i className="fab fa-react text-8xl text-cyan-400"></i>
                 </div>
               </div>
             </>

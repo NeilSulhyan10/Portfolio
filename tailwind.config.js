@@ -27,8 +27,8 @@ export default {
         }
       },
       animation: {
-        typing: "typing 2s steps(20) , blink .7s infinite"
-      }
+        typing: "typing 4s steps(30) forwards, blink 0.7s infinite"
+    }
     },
   },
   plugins: [],
