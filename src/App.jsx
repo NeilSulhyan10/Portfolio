@@ -1,6 +1,8 @@
 import React from "react";
 import useDarkMode from "./useDarkMode";
 import Hero from "./Hero";
+import Footer from "./Footer";
+import Projects from "./Projects";
 
 export default function App() {
   const [colorTheme, setTheme] = useDarkMode();
@@ -10,7 +12,7 @@ export default function App() {
       <div className="min-h-screen bg-white dark:bg-black">
         <div className="text-black dark:text-white flex justify-evenly items-center">
           <div>
-            <p className="text-6xl text-blue-800 dark:text-yellow-400">Neil</p>
+            <p className="text-6xl text-blue-800 dark:text-yellow-400">N</p>
           </div>
           <div className=" mt-6 grid grid-cols-3 gap-12">
             <a href="" className="text-xl font-bold col-span-1">
@@ -33,6 +35,8 @@ export default function App() {
           </div>
         </div>
         <Hero/>
+        <Projects/>
+        <Footer/>
       </div>
     </>
   );
