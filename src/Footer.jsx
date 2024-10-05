@@ -73,7 +73,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-pink-600"
+              className="text-gray-400 text-pink-600"
             >
               <i className="fab fa-instagram text-3xl"></i>
             </a>
@@ -81,7 +81,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-600"
+              className="text-gray-400 text-blue-600"
             >
               <i className="fab fa-linkedin text-3xl"></i>
             </a>
@@ -89,7 +89,7 @@ export default function Footer() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-500"
+              className="text-gray-400 text-gray-500"
             >
               <i className="fab fa-github text-3xl"></i>
             </a>
