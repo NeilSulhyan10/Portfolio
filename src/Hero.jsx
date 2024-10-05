@@ -8,8 +8,8 @@ export default function Hero() {
 
   return (
     <>
-      <div className="mt-10 flex flex-col md:flex-row justify-evenly">
-        <div className="md:mt-12 w-full md:w-[55%] text-center md:text-left">
+      <div className="flex flex-col md:flex-row justify-evenly">
+        <div className="md:mt-32 w-full md:w-[40%] text-center md:text-left">
           <h1 className="font-medium text-4xl dark:text-white animate-typing overflow-hidden whitespace-nowrap md:text-6xl">
             Hello,
           </h1>
@@ -26,11 +26,11 @@ export default function Hero() {
             I am a CSE student from Walchand College of Engineering.
           </p>
         </div>
-        <div className="mt-6 md:mt-0">
+        <div>
           <img
             src={photo}
             alt="Profile"
-            className="h-[60%] w-[60%] md:h-[90%] md:w-[90%] mx-auto"
+            className="h-[60%] w-[60%] md:h-[100%] md:w-[100%] mx-auto"
           />
         </div>
       </div>
