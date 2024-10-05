@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://neilsulhyan10.github.io/Portfolio/",
+  "homepage": "https://NeilSulhyan10.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
