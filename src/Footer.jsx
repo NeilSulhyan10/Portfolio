@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -7,9 +8,30 @@ export default function Footer() {
     message: "",
   });
 
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form data:", formData);
+
+    const serviceId = "service_7ykr66r";   
+    const templateId = "template_z21dawf"; 
+    const userId = "fyqS7bBTPwx6vRZPG";         
+
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setIsSent(true); 
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log('FAILED...', error);
+        setError("Failed to send message. Please try again.");
+      });
   };
 
   const handleChange = (e) => {
@@ -35,6 +57,7 @@ export default function Footer() {
                 className="w-full p-2 bg-gray-800 border border-gray-600 rounded"
                 value={formData.name}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="mb-4">
@@ -46,6 +69,7 @@ export default function Footer() {
                 className="w-full p-2 bg-gray-800 border border-gray-600 rounded"
                 value={formData.email}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="mb-4">
@@ -56,6 +80,7 @@ export default function Footer() {
                 className="w-full p-2 bg-gray-800 border border-gray-600 rounded"
                 value={formData.message}
                 onChange={handleChange}
+                required
               />
             </div>
             <button
@@ -65,35 +90,8 @@ export default function Footer() {
               Submit
             </button>
           </form>
-        </div>
-        <div className="flex flex-col items-center md:items-start">
-          <h2 className="text-2xl font-bold mb-4">Follow Me</h2>
-          <div className="flex space-x-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 text-pink-600"
-            >
-              <i className="fab fa-instagram text-3xl"></i>
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 text-blue-600"
-            >
-              <i className="fab fa-linkedin text-3xl"></i>
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 text-gray-500"
-            >
-              <i className="fab fa-github text-3xl"></i>
-            </a>
-          </div>
+          {isSent && <p className="text-green-500 mt-4">Message sent successfully!</p>}
+          {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
       </div>
     </footer>
