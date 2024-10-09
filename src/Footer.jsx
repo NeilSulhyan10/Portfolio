@@ -14,14 +14,15 @@ export default function Footer() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_7ykr66r";   
-    const templateId = "template_z21dawf"; 
-    const userId = "fyqS7bBTPwx6vRZPG";         
+    const serviceId = "service_7ykr66r";
+    const templateId = "template_z21dawf";
+    const userId = "fyqS7bBTPwx6vRZPG";
 
-    emailjs.send(serviceId, templateId, formData, userId)
+    emailjs
+      .send(serviceId, templateId, formData, userId)
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        setIsSent(true); 
+        console.log("SUCCESS!", response.status, response.text);
+        setIsSent(true);
         setFormData({
           name: "",
           email: "",
@@ -29,7 +30,7 @@ export default function Footer() {
         });
       })
       .catch((error) => {
-        console.log('FAILED...', error);
+        console.log("FAILED...", error);
         setError("Failed to send message. Please try again.");
       });
   };
@@ -44,9 +45,9 @@ export default function Footer() {
 
   return (
     <footer className="text-white py-8 px-4">
-      <div className="max-w-7xl mx-auto flex flex-col space-y-8">
-        <div className="w-1/2 ml-[25%]">
-          <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
+      <div className="max-w-7xl mx-auto flex flex-col justify-evenly md:flex-row">
+        <div className="w-1/2">
+          <h2 className="text-2xl font-bold mb-4 text-blue-800 dark:text-white">Contact Me</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <input
@@ -90,9 +91,61 @@ export default function Footer() {
               Submit
             </button>
           </form>
-          {isSent && <p className="text-green-500 mt-4">Message sent successfully!</p>}
+          {isSent && (
+            <p className="text-green-500 mt-4">Message sent successfully!</p>
+          )}
           {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
+        <div className="mt-8 md:mt-0">
+          <div className="flex flex-col space-y-3">
+            <h4 className="text-lg font-bold underline text-blue-800 dark:text-yellow-400">
+              Contact
+            </h4>
+            <p className="text-black dark:text-white">
+              <i className="fa-regular fa-envelope"></i> :{" "}
+              <a
+                href="mailto:neilsulhyan@gmail.com"
+                className="hover:underline text-blue-400"
+              >
+                neilsulhyan@gmail.com
+              </a>
+            </p>
+            <p className="text-black dark:text-white">
+              <i className="fa-solid fa-phone"></i> :{" "}
+              <a
+                href="tel:+918484979855"
+                className="hover:underline text-blue-400"
+              >
+                +91 8484979855
+              </a>
+            </p>
+            <p className="text-black dark:text-white">
+              <i className="fa-solid fa-location-dot"></i> : Sangli, India
+            </p>
+          </div>
+          <div className="flex flex-col space-y-3">
+            <h4 className="text-lg font-bold underline text-blue-800 mt-8 dark:text-yellow-400 md:mt-4">
+              Follow Me
+            </h4>
+            <div className="flex space-evenly space-x-4">
+              <a className="text-2xl text-black dark:text-white hover:text-pink-600 dark:hover:text-pink-600" href="https://www.instagram.com/amansulhyan10" target="_blank">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a className="text-2xl text-black dark:text-white dark:hover:text-gray-500 hover:text-gray-500" href="https://github.com/NeilSulhyan10" target="_blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a className="text-2xl text-black dark:text-white hover:text-indigo-600 dark:hover:text-indigo-600"
+                href="https://www.linkedin.com/in/neil-sulhyan-091ba82aa/"
+                target="_blank"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-10 border-t border-gray-700 pt-4 flex items-center justify-center">
+        <p className="text-sm text-black dark:text-white">© 2024 Neil Sulhyan. All rights reserved.</p>
       </div>
     </footer>
   );
