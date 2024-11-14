@@ -41,11 +41,11 @@ export default function Tech() {
                   Tech Stack
                 </h2>
                 <div className="grid grid-cols-3 gap-6 justify-items-center mt-4">
-                  <i className="fab fa-html5 text-8xl text-yellow-500"></i>
-                  <i className="fab fa-css3-alt text-8xl text-blue-500"></i>
-                  <i className="fab fa-js text-8xl text-yellow-300"></i>
-                  <i className="fab fa-laravel text-8xl text-red-600"></i>
-                  <i className="fab fa-react text-8xl text-cyan-400"></i>
+                  <i className="fab fa-html5 text-8xl text-yellow-500 transition-transform transform hover:scale-110"></i>
+                  <i className="fab fa-css3-alt text-8xl text-blue-500 transition-transform transform hover:scale-110"></i>
+                  <i className="fab fa-js text-8xl text-yellow-300 transition-transform transform hover:scale-110"></i>
+                  <i className="fab fa-laravel text-8xl text-red-600 transition-transform transform hover:scale-110"></i>
+                  <i className="fab fa-react text-8xl text-cyan-400 transition-transform transform hover:scale-110"></i>
                 </div>
               </div>
             </>

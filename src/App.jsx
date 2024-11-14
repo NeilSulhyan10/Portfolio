@@ -22,7 +22,7 @@ export default function App() {
       <div className="min-h-screen bg-white dark:bg-black">
         <div className="text-black dark:text-white flex justify-between items-center p-6">
           <div>
-            <p className="text-6xl sm:text-6xl text-blue-800 dark:text-yellow-400">
+            <p className="text-5xl md:text-6xl text-blue-800 dark:text-yellow-400">
               N
             </p>
           </div>
