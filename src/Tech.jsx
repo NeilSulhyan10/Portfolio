@@ -1,6 +1,7 @@
 import { useState } from "react";
 import c from "./assets/c.png";
 import cpp from "./assets/cpp.png";
+import java from "./assets/java.png";
 
 export default function Tech() {
   const [activeSection, setActiveSection] = useState("development");
@@ -62,6 +63,10 @@ export default function Tech() {
                   />
                   <img
                     src={cpp}
+                    className="w-44 h-44 transition-transform transform hover:scale-110"
+                  />
+                  <img
+                    src={java}
                     className="w-44 h-44 transition-transform transform hover:scale-110"
                   />
                 </div>
