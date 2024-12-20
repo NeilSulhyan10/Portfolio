@@ -56,7 +56,7 @@ export default function Tech() {
                 <h2 className="text-xl font-bold mb-4 text-center">
                   Tech Stack
                 </h2>
-                <div className="flex flex-col sm:flex-row justify-center mt-4">
+                <div className="flex flex-row justify-center mt-4">
                   <img
                     src={c}
                     className="w-36 h-44 transition-transform transform hover:scale-110 mb-4 sm:mb-0 sm:mr-4"
