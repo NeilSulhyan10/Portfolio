@@ -38,7 +38,7 @@ export default function Tech() {
           {activeSection === "development" ? (
             <>
               <div className="bg-gradient-to-r from-blue-800 to-purple-700 dark:bg-gradient-to-r from-gray-700 to-gray-600 rounded-lg shadow-xl p-6 text-white w-full md:w-1/2 lg:w-1/3 transition-transform transform hover:scale-105 mb-4">
-                <h2 className="text-xl font-semibold mb-4 text-center">
+                <h2 className="text-xl font-bold mb-4 text-center">
                   Tech Stack
                 </h2>
                 <div className="grid grid-cols-3 gap-6 justify-items-center mt-4">
@@ -53,21 +53,21 @@ export default function Tech() {
           ) : (
             <>
               <div className="bg-gradient-to-r from-green-500 to-teal-400 dark:bg-gradient-to-r from-gray-700 to-gray-600 rounded-lg shadow-xl p-6 text-white w-full md:w-1/2 lg:w-1/3 transition-transform transform hover:scale-105 mb-4">
-                <h2 className="text-xl font-semibold mb-4 text-center">
+                <h2 className="text-xl font-bold mb-4 text-center">
                   Tech Stack
                 </h2>
                 <div className="flex justify-center mt-4">
                   <img
                     src={c}
-                    className="w-44 h-44 transition-transform transform hover:scale-110"
+                    className="w-36 h-44 transition-transform transform hover:scale-110"
                   />
                   <img
                     src={cpp}
-                    className="w-44 h-44 transition-transform transform hover:scale-110"
+                    className="w-36 h-44 transition-transform transform hover:scale-110"
                   />
                   <img
                     src={java}
-                    className="w-44 h-44 transition-transform transform hover:scale-110"
+                    className="w-36 h-44 transition-transform transform hover:scale-110"
                   />
                 </div>
               </div>
