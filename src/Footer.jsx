@@ -128,7 +128,7 @@ export default function Footer() {
               Follow Me
             </h4>
             <div className="flex space-evenly space-x-4">
-              <a className="text-2xl text-black dark:text-white hover:text-pink-600 dark:hover:text-pink-600" href="https://www.instagram.com/amansulhyan10" target="_blank">
+              <a className="text-2xl text-black dark:text-white hover:text-pink-600 dark:hover:text-pink-600" href="https://www.instagram.com/neilsulhyan10/" target="_blank">
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a className="text-2xl text-black dark:text-white dark:hover:text-gray-500 hover:text-gray-500" href="https://github.com/NeilSulhyan10" target="_blank">
@@ -145,7 +145,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-10 border-t border-gray-700 pt-4 flex items-center justify-center">
-        <p className="text-sm text-black dark:text-white">© 2024 Neil Sulhyan. All rights reserved.</p>
+        <p className="text-sm text-black dark:text-white">© 2025 Neil Sulhyan. All rights reserved.</p>
       </div>
     </footer>
   );
