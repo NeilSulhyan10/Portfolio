@@ -1,4 +1,5 @@
 import photo from "./assets/photo.png";
+import resume from "./assets/Neil Sulhyan TEDx.pdf";
 
 export default function Hero() {
   return (
@@ -20,6 +21,13 @@ export default function Hero() {
           <p className="text-sm md:text-xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap">
             I am a CSE student from Walchand College of Engineering.
           </p>
+          <a
+            href={resume}
+            download="Neil Sulhyan Resume"
+            className="mt-6 inline-block px-6 py-3 bg-blue-800 dark:bg-yellow-400 text-white font-semibold rounded-md hover:bg-blue-700 dark:hover:bg-yellow-500 text-center"
+          >
+           <i className="fa-solid fa-download"></i> Resume
+          </a>
         </div>
         <div>
           <img
