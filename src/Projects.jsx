@@ -17,12 +17,17 @@ export default function Projects() {
         githubLink: 'https://github.com/NeilSulhyan10',
         liveDemo: 'https://abmaudit.in',
       },
+      {
+        name: 'WebMonitor',
+        description: 'WebMonitor is a web application built with Spring Boot and React that tracks the status, SSL details, domain information, and server details of multiple websites. It proactively monitors website uptime and alerts users via email when a site is down, or when SSL certificates or domain registrations are nearing expiration. This ensures timely action to maintain seamless website functionality and security.',
+        githubLink: 'https://github.com/NeilSulhyan10',
+      },
     ];
   
     return (
       <section className="my-20">
         <h2 className="text-4xl font-bold text-center dark:text-white">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           {projects.map((project, index) => (
             <div
             key={index}
