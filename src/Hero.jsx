@@ -1,5 +1,5 @@
-import photo from "./assets/photo.png";
-import resume from "./assets/Neil Sulhyan TEDx.pdf";
+import photo from "./assets/IMG_3643.png";
+import resume from "./assets/Neil Sulhyan May '25.pdf";
 
 export default function Hero() {
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
           <img
             src={photo}
             alt="Profile"
-            className="h-[60%] w-[60%] md:h-[100%] md:w-[100%] mx-auto"
+            className="h-[60%] w-[60%] md:h-[100%] md:w-[75%] mx-auto"
           />
         </div>
       </div>

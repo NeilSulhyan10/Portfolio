@@ -3,6 +3,7 @@ import c from "./assets/c.png";
 import cpp from "./assets/cpp.png";
 import java from "./assets/java.png";
 import springboot from "./assets/springboot.png"
+import express from "./assets/express.png";
 
 export default function Tech() {
   const [activeSection, setActiveSection] = useState("development");
@@ -45,9 +46,14 @@ export default function Tech() {
                   <i className="fab fa-js text-8xl text-yellow-300 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-laravel text-8xl text-red-600 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-react text-8xl text-cyan-400 transition-transform transform hover:scale-110"></i>
+                  <i class="fa-brands fa-node text-8xl text-green-400 transition-transform transform hover:scale-110"></i>
+                  <img
+                  src={express}
+                  className="w-32 h-24 transition-transform transform hover:scale-110 rounded-lg"
+                />
                   <img
                   src={springboot}
-                  className="w-24 h-24 transition-transform transform hover:scale-110 rounded-lg"
+                  className="w-32 h-24 transition-transform transform hover:scale-110 rounded-lg"
                 />
                 </div>
               </div>

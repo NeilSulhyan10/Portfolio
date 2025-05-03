@@ -24,12 +24,24 @@ export default {
           "100%": {
             borderColor: "white"
           }  
-        }
+        },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        carousel: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-320px * 5))' },
+        },
       },
       animation: {
-        typing: "typing 4s steps(30) forwards, blink 0.7s infinite"
-    }
+        typing: "typing 4s steps(30) forwards, blink 0.7s infinite",
+        scroll: "scroll 10s linear infinite",
+        carousel: "carousel 30s linear infinite"
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
