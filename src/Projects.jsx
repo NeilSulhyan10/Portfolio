@@ -1,9 +1,25 @@
+import { useState, useEffect, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function Projects() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => setIsMobile(window.innerWidth < 768);
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  const autoplayConfig = useMemo(() => ({
+    delay: isMobile ? 4000 : 2000,
+    disableOnInteraction: true,
+    pauseOnMouseEnter: true,
+  }), [isMobile]);
+
   const projects = [
     {
       name: "Fitmeter",
@@ -34,7 +50,7 @@ export default function Projects() {
     {
       name: "Vardaan",
       description:
-        "Vardaan is a community development web platform created in collaboration with Zilla Parishad Sangli to drive inclusive and sustainable growth in rural areas. As the frontend developer, I was responsible for building a responsive and user-friendly interface using React and Tailwind CSS. The platform serves as a digital hub for managing CSR initiatives focused on education, healthcare, livelihood, infrastructure, and environmental sustainability. Vardaan enables seamless communication and coordination between stakeholders, local communities, and government bodies, contributing to the vision of a self-sustaining and empowered rural society.",
+        "Vardaan is a community development platform created with Zilla Parishad Sangli to promote inclusive growth in rural areas. As the frontend developer, I built a responsive interface using React and Tailwind CSS. The platform manages CSR initiatives in education, healthcare, livelihood, infrastructure, and sustainability, facilitating communication between stakeholders, local communities, and government bodies to empower rural society.",
       githubLink: "https://github.com/NeilSulhyan10",
       liveDemo: "https://zpsanglivardaan.in/",
     },
@@ -45,7 +61,6 @@ export default function Projects() {
       <h2 className="text-4xl font-bold text-center dark:text-white mb-10">
         Projects
       </h2>
-
       <div className="overflow-x-hidden scrollbar-hide">
         <div className="flex space-x-6 px-4 snap-x snap-mandatory">
           <Swiper
@@ -54,11 +69,7 @@ export default function Projects() {
             navigation={true}
             spaceBetween={30}
             loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
+            autoplay={autoplayConfig}
             slidesPerView={1}
             breakpoints={{
               768: { slidesPerView: 2 },
@@ -67,7 +78,7 @@ export default function Projects() {
           >
             {projects.map((project, index) => (
               <SwiperSlide key={index}>
-                <div className="snap-start bg-gradient-to-r from-teal-500 to-blue-600 dark:bg-gradient-to-r from-gray-700 to-gray-600 rounded-lg shadow-xl p-6 w-80 h-[350px] flex flex-col justify-between flex-shrink-0 ml-10">
+                <div className="snap-start bg-gradient-to-r from-teal-500 to-blue-600 dark:bg-gradient-to-r from-gray-700 to-gray-600 rounded-lg shadow-xl p-6 w-80 h-[350px] 2xl:w-[40rem] flex flex-col justify-between flex-shrink-0 ml-8">
                   <h3 className="text-3xl font-semibold mb-2 text-white">
                     {project.name}
                   </h3>
