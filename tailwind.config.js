@@ -25,14 +25,6 @@ export default {
             borderColor: "white"
           }  
         },
-        scroll: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
-        carousel: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-320px * 5))' },
-        },
       },
       animation: {
         typing: "typing 4s steps(30) forwards, blink 0.7s infinite",
