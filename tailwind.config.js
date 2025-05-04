@@ -30,7 +30,11 @@ export default {
         typing: "typing 4s steps(30) forwards, blink 0.7s infinite",
         scroll: "scroll 10s linear infinite",
         carousel: "carousel 30s linear infinite"
-      }
+      },
+      dropShadow: {
+        'yellow-sharp': '0 0 15px #FACC15',
+        'blue-sharp': '0 0 15px #1E40AF',
+      },
     },
   },
   plugins: [

@@ -1,4 +1,4 @@
-import photo from "./assets/IMG_3643.png";
+import photo from "./assets/NeilPic.png";
 import resume from "./assets/Neil Sulhyan May '25.pdf";
 
 export default function Hero() {
@@ -33,7 +33,7 @@ export default function Hero() {
           <img
             src={photo}
             alt="Profile"
-            className="h-[60%] w-[60%] md:h-[100%] md:w-[75%] mx-auto"
+            className="h-[60%] w-[60%] md:h-[100%] md:w-[75%] mx-auto drop-shadow-blue-sharp dark:drop-shadow-yellow-sharp hover:transition-transform hover:scale-110 duration-300 ease-in-out"
           />
         </div>
       </div>
