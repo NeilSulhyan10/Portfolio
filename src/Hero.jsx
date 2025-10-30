@@ -1,5 +1,5 @@
 import photo from "./assets/NeilPic.png";
-import resume from "./assets/Neil Sulhyan May '25.pdf";
+import resume from "./assets/Neil_Sulhyan_CSE_CV.pdf";
 
 export default function Hero() {
   return (
