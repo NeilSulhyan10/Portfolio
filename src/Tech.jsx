@@ -46,7 +46,7 @@ export default function Tech() {
                   <i className="fab fa-js text-8xl text-yellow-300 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-laravel text-8xl text-red-600 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-react text-8xl text-cyan-400 transition-transform transform hover:scale-110"></i>
-                  <i class="fa-brands fa-node text-8xl text-green-400 transition-transform transform hover:scale-110"></i>
+                  <i className="fa-brands fa-node text-8xl text-green-400 transition-transform transform hover:scale-110"></i>
                   <img
                   src={express}
                   className="w-32 h-24 transition-transform transform hover:scale-110 rounded-lg"

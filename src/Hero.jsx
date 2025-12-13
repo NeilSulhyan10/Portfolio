@@ -19,7 +19,7 @@ export default function Hero() {
             Computer Science and Engineering Student.
           </h1>
           <p className="text-sm md:text-xl font-light dark:text-white animate-typing overflow-hidden whitespace-nowrap">
-            I am a CSE student from Walchand College of Engineering.
+            Walchand College of Engineering - Sangli.
           </p>
           <a
             href={resume}
