@@ -8,30 +8,55 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
+        meteor: {
+          '0%': {
+            transform: 'rotate(215deg) translateX(0)',
+            opacity: '1',
           },
-          "100%": {
-            width: "100%"
-          }  
+          '70%': {
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'rotate(215deg) translateX(-500px)',
+            opacity: '0',
+          },
+        },
+        typing: {
+          '0%': {
+            width: '0%',
+            visibility: 'hidden',
+          },
+          '100%': {
+            width: '100%',
+          },
         },
         blink: {
-          "50%": {
-            borderColor: "transparent"
+          '50%': {
+            borderColor: 'transparent',
           },
-          "100%": {
-            borderColor: "white"
-          }  
+          '100%': {
+            borderColor: 'white',
+          },
+        },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        carousel: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
+
       animation: {
-        typing: "typing 4s steps(30) forwards, blink 0.7s infinite",
-        scroll: "scroll 10s linear infinite",
-        carousel: "carousel 30s linear infinite"
+        meteor: 'meteor 5s linear infinite',
+        typing: 'typing 4s steps(30) forwards, blink 0.7s infinite',
+        scroll: 'scroll 10s linear infinite',
+        carousel: 'carousel 30s linear infinite',
       },
+
       dropShadow: {
+        'cyan-sharp': '0 0 15px #22D3EE',
         'yellow-sharp': '0 0 15px #FACC15',
         'blue-sharp': '0 0 15px #1E40AF',
       },

@@ -5,7 +5,6 @@ import { motion } from "motion/react";
 
 export const Vortex = ({ theme = "dark", ...props }) => {
   const isDark = theme === "dark";
-  console.log("Theme in Vortex:", isDark);
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const animationFrameId = useRef();
@@ -51,7 +50,6 @@ export const Vortex = ({ theme = "dark", ...props }) => {
       const ctx = canvas.getContext("2d");
 
       if (ctx) {
-        // 🔥 RESET CANVAS STATE
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.globalAlpha = 1;
         ctx.globalCompositeOperation = "source-over";
@@ -66,7 +64,6 @@ export const Vortex = ({ theme = "dark", ...props }) => {
 
   const initParticles = () => {
     tick = 0;
-    // simplex = new SimplexNoise();
     particleProps = new Float32Array(particlePropsLength);
 
     for (let i = 0; i < particlePropsLength; i += particlePropCount) {
