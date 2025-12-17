@@ -16,9 +16,9 @@ export default function Tech() {
         <div className="flex justify-center space-x-4 flex-wrap">
           <button
             onClick={() => setActiveSection("development")}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border text-slate-400 ${
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border ${
               activeSection === "development"
-                ? "border-cyan-400 text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+                ? "border-cyan-400 text-[rgba(34,211,238,0.8)] dark:text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
                 : "border-gray-800 text-slate-400 hover:border-gray-600"
             }`}
           >
@@ -26,9 +26,9 @@ export default function Tech() {
           </button>
           <button
             onClick={() => setActiveSection("competitive")}
-            className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border text-slate-400 ${
+            className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border ${
               activeSection === "competitive"
-                ? "border-cyan-400 text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+                ? "border-cyan-400 text-[rgba(34,211,238,0.8)] dark:text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
                 : "border-gray-800 text-slate-400 hover:border-gray-600"
             }`}
           >
