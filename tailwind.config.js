@@ -65,7 +65,7 @@ export default {
       dropShadow: {
         "cyan-sharp": "0 0 15px #22D3EE",
         "yellow-sharp": "0 0 15px #FACC15",
-        "blue-sharp": "0 0 15px #1E40AF",
+        "blue-sharp": "0 0 15px #af1e88ff",
       },
     },
   },

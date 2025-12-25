@@ -26,12 +26,12 @@ export default function App() {
           theme={colorTheme}
           rangeY={1500}
           particleCount={1000}
-          baseHue={colorTheme === "dark" ? 520 : 120}
+          baseHue={colorTheme === "dark" ? 520 : 999}
           className="w-full h-full"
         >
           <div className="text-black dark:text-white flex justify-between items-center p-6">
             <div>
-              <p className="text-5xl md:text-6xl text-blue-800 dark:text-[#22D3EE]">
+              <p className="text-5xl md:text-6xl text-pink-600 dark:text-[#22D3EE]">
                 N
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function App() {
                 href="#"
                 className={`text-xl font-bold ${
                   activeSection === "home"
-                    ? "border-b-4 border-blue-800 dark:border-[#22D3EE]"
+                    ? "border-b-4 border-pink-600 dark:border-[#22D3EE]"
                     : ""
                 }`}
                 onClick={() => scrollToSection(homeRef, "home")}
@@ -51,7 +51,7 @@ export default function App() {
                 href="#"
                 className={`text-xl font-bold ${
                   activeSection === "about"
-                    ? "border-b-4 border-blue-800 dark:border-[#22D3EE]"
+                    ? "border-b-4 border-pink-600 dark:border-[#22D3EE]"
                     : ""
                 }`}
                 onClick={() => scrollToSection(aboutRef, "about")}
@@ -62,7 +62,7 @@ export default function App() {
                 href="#"
                 className={`text-xl font-bold ${
                   activeSection === "projects"
-                    ? "border-b-4 border-blue-800 dark:border-[#22D3EE]"
+                    ? "border-b-4 border-pink-600 dark:border-[#22D3EE]"
                     : ""
                 }`}
                 onClick={() => scrollToSection(projectsRef, "projects")}
