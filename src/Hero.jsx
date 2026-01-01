@@ -24,7 +24,7 @@ export default function Hero() {
           <a
             href={resume}
             download="Neil Sulhyan Resume"
-            className="mt-6 inline-block px-6 py-3 bg-pink-600 dark:bg-[#22D3EE] text-white font-semibold rounded-md hover:bg-blue-700 dark:hover:bg-[#22D3EE] text-center"
+            className="mt-6 inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 dark:bg-[#22D3EE] text-white font-semibold rounded-md hover:bg-blue-700 dark:hover:bg-[#22D3EE] text-center"
           >
            <i className="fa-solid fa-download"></i> Resume
           </a>

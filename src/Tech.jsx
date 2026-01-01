@@ -18,7 +18,7 @@ export default function Tech() {
             onClick={() => setActiveSection("development")}
             className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border ${
               activeSection === "development"
-                ? "border-cyan-400 text-[rgba(34,211,238,0.8)] dark:text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+                ? "border-pink-500 text-pink-500 shadow-[0_0_12px_#ff1d96ff] dark:border-cyan-400 dark:text-[rgba(34,211,238,0.8)] dark:text-white dark:shadow-[0_0_12px_rgba(34,211,238,0.8)]"
                 : "border-gray-800 text-slate-400 hover:border-gray-600"
             }`}
           >
@@ -28,7 +28,7 @@ export default function Tech() {
             onClick={() => setActiveSection("competitive")}
             className={`px-4 py-2 rounded-lg transition-colors duration-300 backdrop-blur-lg border ${
               activeSection === "competitive"
-                ? "border-cyan-400 text-[rgba(34,211,238,0.8)] dark:text-white shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+                ? "border-pink-500 text-pink-500 shadow-[0_0_12px_#ff1d96ff] dark:border-cyan-400 dark:text-[rgba(34,211,238,0.8)] dark:text-white dark:shadow-[0_0_12px_rgba(34,211,238,0.8)]"
                 : "border-gray-800 text-slate-400 hover:border-gray-600"
             }`}
           >
@@ -50,6 +50,7 @@ export default function Tech() {
                   <i className="fab fa-css3-alt text-8xl text-blue-500 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-js text-8xl text-yellow-300 transition-transform transform hover:scale-110"></i>
                   <i className="fab fa-laravel text-8xl text-red-600 transition-transform transform hover:scale-110"></i>
+                  <i className="bg-[linear-gradient(to_bottom,#2563eb_50%,#facc15_50%)] bg-clip-text text-transparent fab fa-python text-8xl transition-transform transform hover:scale-110"></i>
                 </div>
               </div>
             </>

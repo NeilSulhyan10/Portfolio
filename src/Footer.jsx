@@ -85,7 +85,7 @@ export default function Footer() {
     <footer className="text-white py-8 px-4">
       <div className="max-w-7xl mx-auto flex flex-col justify-evenly md:flex-row">
         <div className="w-1/2">
-          <h2 className="text-2xl font-bold mb-4 text-blue-800 dark:text-[#22D3EE]">
+          <h2 className="text-2xl font-bold mb-4 text-pink-500 dark:text-blue-800 dark:text-[#22D3EE]">
             Contact Me
           </h2>
           <form onSubmit={handleSubmit}>
@@ -131,7 +131,7 @@ export default function Footer() {
               ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-blue-500 hover:bg-blue-600 dark:bg-[#22D3EE] dark:hover:bg-[#2296eeff]"
+                  : "bg-pink-500 hover:bg-pink-600 dark:bg-blue-500 hover:bg-blue-600 dark:bg-[#22D3EE] dark:hover:bg-[#2296eeff]"
               }
             `}
             >
@@ -141,14 +141,14 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:mt-0">
           <div className="flex flex-col space-y-3">
-            <h4 className="text-lg font-bold underline text-blue-800 dark:text-[#22D3EE]">
+            <h4 className="text-lg font-bold underline text-pink-500 dark:text-blue-800 dark:text-[#22D3EE]">
               Contact
             </h4>
             <p className="text-black dark:text-white">
               <i className="fa-regular fa-envelope"></i> :{" "}
               <a
                 href="mailto:neilsulhyan@gmail.com"
-                className="hover:underline text-blue-400"
+                className="hover:underline text-pink-400 dark:text-blue-400"
               >
                 neilsulhyan@gmail.com
               </a>
@@ -157,7 +157,7 @@ export default function Footer() {
               <i className="fa-solid fa-phone"></i> :{" "}
               <a
                 href="tel:+918484979855"
-                className="hover:underline text-blue-400"
+                className="hover:underline text-pink-400 dark:text-blue-400"
               >
                 +91 8484979855
               </a>
@@ -167,7 +167,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col space-y-3">
-            <h4 className="text-lg font-bold underline text-blue-800 mt-8 dark:text-[#22D3EE] md:mt-4">
+            <h4 className="text-lg font-bold underline text-pink-500 dark:text-blue-800 mt-8 dark:text-[#22D3EE] md:mt-4">
               Follow Me
             </h4>
             <div className="flex space-evenly space-x-4">
